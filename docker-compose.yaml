@@ -1,0 +1,15 @@
+services:
+  minecraft:
+    image: lastsandwich/minecraft-bdsx-linux
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "29133:19132/udp"
+      - "29133:19132/tcp"
+    #restart: always
+    # allow attaching to container
+    tty: true
+    stdin_open: true
+    volumes:
+      - C:\Minecraft\Bdsx-Docker:/root/bds
