@@ -7,3 +7,4 @@ then
 fi
 
 BDSX_YES=true ./bdsx-startup.sh
+yay
